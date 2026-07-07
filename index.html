@@ -59,7 +59,7 @@ h1,h2,h3,.mark{font-family:'Syne',sans-serif;letter-spacing:-.02em}
 .hero{padding:150px 0 90px;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;top:-20%;right:-10%;width:60vw;height:60vw;max-width:720px;max-height:720px;background:radial-gradient(circle,rgba(28,26,23,.06),transparent 62%);pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-.hero-copy h1{font-size:clamp(42px,6.4vw,76px);font-weight:800;line-height:1.02;margin-bottom:22px}
+.hero-copy h1{font-size:clamp(38px,6.4vw,76px);font-weight:800;line-height:1.04;margin-bottom:22px;overflow-wrap:break-word}
 .hero-copy h1 .accent{color:var(--ink);position:relative;white-space:nowrap}
 .hero-copy h1 .accent::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:4px;border-radius:2px;background:var(--ink);transform:scaleX(0);transform-origin:left;animation:underline .85s var(--ease) 1.9s forwards}
 @keyframes underline{to{transform:scaleX(1)}}
@@ -107,7 +107,7 @@ section{position:relative}
 
 /* thesis statement */
 .thesis{text-align:center;max-width:900px;margin:0 auto}
-.thesis h2{font-size:clamp(32px,5vw,58px);font-weight:800;line-height:1.08;letter-spacing:-.03em}
+.thesis h2{font-size:clamp(28px,5vw,58px);font-weight:800;line-height:1.08;letter-spacing:-.03em}
 .thesis h2 .dim{color:var(--dark-muted)}
 .thesis .strike{position:relative;white-space:nowrap}
 .thesis .strike::after{content:"";position:absolute;left:-2%;right:-2%;top:54%;height:3px;background:var(--dark-ink);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease) .2s}
@@ -196,6 +196,8 @@ section{position:relative}
   .hero{padding:120px 0 60px}
   .hero-grid{grid-template-columns:1fr;gap:44px}
   .hero-copy{text-align:center;order:1}
+  .hero-copy h1 .accent{white-space:normal}
+  .hero-copy h1 .accent::after{display:none}
   .hero-copy .hero-sub{margin-left:auto;margin-right:auto}
   .hero-actions{justify-content:center}
   .hero-visual{order:2}
