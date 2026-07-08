@@ -3,11 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>ROHO — Manage your whole property portfolio from WhatsApp</title>
-<meta name="description" content="ROHO is a WhatsApp AI that runs your rental portfolio. Rent, compliance, maintenance, expenses and tenants — managed by text. No apps. No spreadsheets. No letting agent.">
-<meta property="og:title" content="ROHO — Your letting agent is a text message">
-<meta property="og:description" content="Run your whole property portfolio from WhatsApp. Rent, compliance, maintenance, expenses, all by text.">
+<title>ROHO — Your whole portfolio, managed by message</title>
+<meta name="description" content="ROHO is a WhatsApp AI that runs your entire rental portfolio — rent, compliance, maintenance, expenses and tenants. No apps. No spreadsheets. No letting agent fees.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="ROHO">
+<meta property="og:url" content="https://try.roho.ing">
+<meta property="og:title" content="ROHO — Your whole portfolio, managed by message">
+<meta property="og:description" content="A WhatsApp AI that runs your entire rental portfolio — rent, compliance, maintenance, expenses and tenants. No apps. No letting agent fees.">
+<meta property="og:image" content="https://try.roho.ing/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ROHO — Your whole portfolio, managed by message">
+<meta name="twitter:description" content="A WhatsApp AI that runs your entire rental portfolio, all by chat.">
+<meta name="twitter:image" content="https://try.roho.ing/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
@@ -125,6 +134,7 @@ section{position:relative}
 .feature-list .dot{color:var(--ink);font-weight:800;flex-shrink:0;margin-top:1px}
 .band-dark .feature-list li{color:var(--dark-ink)}
 .band-dark .feature-list .dot{color:var(--dark-ink)}
+.soon{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;border:1px solid currentColor;border-radius:999px;padding:1px 8px;margin-left:8px;vertical-align:middle;opacity:.65;line-height:1.5}
 
 /* small standalone chat card (feature visuals) */
 .chatcard{background:#e5ddd5;border-radius:22px;padding:18px 14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px;max-width:400px;margin:0 auto;
@@ -191,6 +201,50 @@ section{position:relative}
 .chat-body .bubble:nth-child(5){animation-delay:2s}
 @keyframes pop{to{opacity:1;transform:none}}
 
+/* ── DASHBOARD SNAPSHOTS ── */
+.showcase-head{text-align:center;max-width:640px;margin:0 auto 50px}
+.showcase-head h2{font-size:clamp(30px,4.4vw,50px);font-weight:800;line-height:1.06;margin-top:14px}
+.showcase-head p{color:var(--dark-muted);font-size:18px;margin-top:16px}
+.browser{max-width:1000px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);overflow:hidden;border:1px solid rgba(0,0,0,.14)}
+.browser-bar{height:40px;background:#e9e6e0;display:flex;align-items:center;gap:7px;padding:0 15px;border-bottom:1px solid #d9d5cd}
+.browser-dot{width:11px;height:11px;border-radius:50%}
+.browser-url{margin-left:14px;background:#fff;border-radius:8px;height:24px;flex:1;max-width:300px;display:flex;align-items:center;padding:0 13px;font-size:11.5px;color:#8a8780}
+.db{display:flex;background:var(--cream);min-height:352px}
+.db-nav{width:158px;background:#fff;border-right:1px solid #e5e1da;padding:15px 11px;flex-shrink:0}
+.db-brand{display:flex;align-items:center;gap:8px;padding:2px 6px 15px}
+.db-brand .m{width:23px;height:23px;background:#1c1a17;border-radius:6px;display:flex;align-items:center;justify-content:center}
+.db-brand .m span{font-family:'Syne';font-weight:800;font-size:11px;color:#f4f2ee}
+.db-brand b{font-family:'Syne';font-weight:800;font-size:15px;color:#1c1a17;letter-spacing:-.02em}
+.db-ni{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:8px;font-size:11.5px;color:#8a8780;font-weight:500;margin-bottom:2px}
+.db-ni.on{background:rgba(37,99,235,.08);color:#2563eb}
+.db-ni .i{font-size:12px;width:15px;text-align:center}
+.db-main{flex:1;padding:17px 18px;min-width:0}
+.db-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.db-top h4{font-family:'Syne';font-weight:800;font-size:17px;color:#1c1a17}
+.db-chip{font-size:10px;color:#8a8780;background:#fff;border:1px solid #e5e1da;border-radius:20px;padding:5px 11px}
+.db-kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:13px}
+.db-k{background:#fff;border:1px solid #e5e1da;border-radius:10px;padding:9px 9px}
+.db-kn{font-family:'Syne';font-weight:800;font-size:15px;letter-spacing:-.5px;line-height:1;color:#1c1a17}
+.db-kn.g{color:#059669}.db-kn.r{color:#dc2626}.db-kn.a{color:#d97706}.db-kn.b{color:#2563eb}
+.db-kl{font-size:7.5px;color:#8a8780;margin-top:6px;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.db-cards{display:grid;grid-template-columns:1.35fr 1fr;gap:11px}
+.db-card{background:#fff;border:1px solid #e5e1da;border-radius:12px;padding:14px}
+.db-card h5{font-size:11.5px;font-weight:700;color:#1c1a17;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.db-card h5 span{color:#8a8780;font-weight:500;font-size:10px}
+.db-bars{display:flex;align-items:flex-end;gap:16px;height:80px}
+.db-barcol{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;justify-content:flex-end}
+.db-barcol .bar{width:100%;border-radius:5px 5px 0 0}
+.db-barcol .bl{font-size:8px;color:#8a8780;font-weight:600}
+.db-rowr{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid #f0ede7}
+.db-rowr:last-child{border-bottom:none}
+.db-rowr .addr{color:#1c1a17;font-weight:500;font-size:10.5px}
+.db-pill{font-size:8.5px;font-weight:700;padding:2px 8px;border-radius:20px}
+.db-pill.paid{background:rgba(5,150,105,.1);color:#059669}
+.db-pill.late{background:rgba(220,38,38,.08);color:#dc2626}
+.db-pill.due{background:rgba(217,119,6,.1);color:#d97706}
+.snap-strip{max-width:1000px;margin:26px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.snap-strip .db-card{box-shadow:var(--shadow)}
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   .hero{padding:120px 0 60px}
@@ -215,6 +269,8 @@ section{position:relative}
   .step p{margin-left:auto;margin-right:auto}
   .step{text-align:center;padding-top:0}
   .nav-menu-links{display:none}
+  .db-kpis{grid-template-columns:repeat(4,1fr)}
+  .snap-strip{grid-template-columns:1fr;max-width:460px}
 }
 @media(max-width:560px){
   .wrap{padding:0 18px}
@@ -222,6 +278,10 @@ section{position:relative}
   .tile.wide,.tile.feature-tile{grid-column:span 1}
   .nav-link{display:none}
   .footer-grid{flex-direction:column}
+  .db-nav{display:none}
+  .db-kpis{grid-template-columns:repeat(3,1fr)}
+  .db-cards{grid-template-columns:1fr}
+  .db-main{padding:14px}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -248,7 +308,7 @@ section{position:relative}
         <a class="nav-link" href="#everything">Everything it does</a>
         <a class="nav-link" href="#how">How it works</a>
       </div>
-      <a class="nav-cta" href="https://www.roho.ing" target="_blank" rel="noopener">
+      <a class="nav-cta" href="https://www.roho.ing/#signup" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.1 2.9c.2.2 2 3.1 5 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
         Start on WhatsApp
       </a>
@@ -263,7 +323,7 @@ section{position:relative}
       <h1>Your whole portfolio.<br><span class="accent">Managed by message.</span></h1>
       <p class="hero-sub">A WhatsApp AI that runs your entire rental portfolio — rent, compliance, maintenance, expenses and tenants.</p>
       <div class="hero-actions">
-        <a class="btn btn-wa" href="https://www.roho.ing" target="_blank" rel="noopener">
+        <a class="btn btn-wa" href="https://www.roho.ing/#signup" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.1 2.9c.2.2 2 3.1 5 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
           Start on WhatsApp
         </a>
@@ -304,7 +364,7 @@ section{position:relative}
 <section class="band band-dark">
   <div class="wrap">
     <div class="thesis reveal">
-      <h2>No apps. No spreadsheets.<br><span class="strike dim">No letting agent</span> taking 10%.</h2>
+      <h2>No apps. No spreadsheets.<br><span class="strike dim">No letting agent</span> fees.</h2>
       <p class="thesis-sub">You already run your life in WhatsApp. Now run your portfolio there too — and let the AI do the admin.</p>
     </div>
   </div>
@@ -328,21 +388,48 @@ section{position:relative}
       <div class="feature-copy reveal d1">
         <span class="eyebrow">Rent tracking</span>
         <h2>Know who's paid before you've had your coffee.</h2>
-        <p class="lead">Tell ROHO when money lands and it reconciles it against the right tenancy. Ask who's late and it tells you — then chases them for you.</p>
+        <p class="lead">Tell ROHO when money lands and it reconciles it against the right tenancy — with live bank connections coming soon to log rent automatically the moment it arrives. Ask who's late and it tells you, then chases them for you.</p>
         <ul class="feature-list">
           <li><span class="dot">→</span>Automatic matching with your <strong>ROHO-XXXX</strong> reference codes</li>
           <li><span class="dot">→</span>Late-rent reminders drafted and sent on your say-so</li>
           <li><span class="dot">→</span>A running paid / unpaid picture across the whole portfolio</li>
+          <li><span class="dot">→</span>Live bank connections on the way — rent logged the moment it lands, no message needed <span class="soon">Soon</span></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Feature 2: Compliance (dark) -->
+<!-- Feature 2: Maintenance & contractors (dark) -->
 <section class="band band-dark">
   <div class="wrap">
     <div class="feature flip">
+      <div class="feature-visual reveal">
+        <div class="chatcard">
+          <div class="bubble them"><span class="receipt">🖼️</span><strong>Sarah at Flat 2B</strong> messaged me — her boiler's leaking. Photo's attached, so I've logged the job.</div>
+          <div class="bubble them">I've briefed <strong>Dave</strong>, your plumber. He can be there tomorrow AM. Approve up to <strong>£150</strong>?</div>
+          <div class="bubble me">approved</div>
+          <div class="bubble them"><span class="receipt">🧾</span><strong>Dave's sent his invoice</strong> — £120. Filed to Flat 2B, ready for your tax. Job closed ✓</div>
+        </div>
+      </div>
+      <div class="feature-copy reveal d1">
+        <span class="eyebrow on-dark">Maintenance &amp; contractors</span>
+        <h2>Your tenants and trades talk to ROHO — you just get the updates.</h2>
+        <p class="lead">Give everyone one number. Tenants report problems straight to ROHO, contractors get briefed and send their quotes and invoices back to it — and you get a clean summary with the only decision that matters.</p>
+        <ul class="feature-list">
+          <li><span class="dot">→</span>Tenants message ROHO directly to report an issue</li>
+          <li><span class="dot">→</span>Contractors are briefed by ROHO and send quotes &amp; invoices back to it</li>
+          <li><span class="dot">→</span>You just approve the spend — ROHO handles the back-and-forth</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature 3: Compliance -->
+<section class="band band-surface">
+  <div class="wrap">
+    <div class="feature">
       <div class="feature-visual reveal">
         <div class="chatcard">
           <div class="bubble them">Heads up — the <strong>EPC for 8 Priory Court</strong> expires in 21 days. Reply <strong>sort it</strong> and I'll line up an assessor.</div>
@@ -351,39 +438,13 @@ section{position:relative}
         </div>
       </div>
       <div class="feature-copy reveal d1">
-        <span class="eyebrow on-dark">Compliance certificates</span>
+        <span class="eyebrow">Compliance certificates</span>
         <h2>Never miss another expiry.</h2>
         <p class="lead">Gas, EPC, EICR, insurance — ROHO tracks every certificate and warns you well before it lapses. Multi-unit buildings default to building-level compliance, so nothing slips.</p>
         <ul class="feature-list">
           <li><span class="dot">→</span>Proactive countdowns before anything expires</li>
           <li><span class="dot">→</span>New certificates scanned and filed automatically</li>
           <li><span class="dot">→</span>Building-level defaults for HMOs and blocks of flats</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Feature 3: Maintenance -->
-<section class="band band-surface">
-  <div class="wrap">
-    <div class="feature">
-      <div class="feature-visual reveal">
-        <div class="chatcard">
-          <div class="bubble me"><span class="receipt">🖼️</span>tenant sent me this — boiler's leaking</div>
-          <div class="bubble them">Logged a maintenance job for <strong>Flat 2B</strong> and messaged your plumber Dave with the photo. Approve up to <strong>£150</strong> and he'll go straight round?</div>
-          <div class="bubble me">approved</div>
-          <div class="bubble them">Done ✓ Dave's booked for tomorrow AM. I'll keep the tenant updated and log the invoice when it's in.</div>
-        </div>
-      </div>
-      <div class="feature-copy reveal d1">
-        <span class="eyebrow">Maintenance &amp; contractors</span>
-        <h2>From tenant complaint to booked job — in one thread.</h2>
-        <p class="lead">Forward a tenant's message or photo and ROHO opens the job, briefs your contractor, and keeps everyone in the loop. You just approve the spend.</p>
-        <ul class="feature-list">
-          <li><span class="dot">→</span>Jobs raised straight from a tenant photo or message</li>
-          <li><span class="dot">→</span>Contractors briefed and coordinated for you</li>
-          <li><span class="dot">→</span>Spend approvals stay in your hands</li>
         </ul>
       </div>
     </div>
@@ -436,6 +497,94 @@ section{position:relative}
           <li><span class="dot">→</span>Sign in with your phone number — no email, no app</li>
           <li><span class="dot">→</span>Always in sync with your WhatsApp thread</li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD SNAPSHOTS -->
+<section class="band band-dark">
+  <div class="wrap">
+    <div class="showcase-head reveal">
+      <span class="eyebrow on-dark">The dashboard</span>
+      <h2>The whole portfolio, on one screen.</h2>
+      <p>When you want the full picture, roho.ing lays out every number — live and always in sync with your chat.</p>
+    </div>
+
+    <div class="browser reveal d1">
+      <div class="browser-bar">
+        <span class="browser-dot" style="background:#ff5f57"></span>
+        <span class="browser-dot" style="background:#febc2e"></span>
+        <span class="browser-dot" style="background:#28c840"></span>
+        <span class="browser-url">roho.ing</span>
+      </div>
+      <div class="db">
+        <div class="db-nav">
+          <div class="db-brand"><span class="m"><span>R</span></span><b>ROHO</b></div>
+          <div class="db-ni on"><span class="i">🏠</span>Overview</div>
+          <div class="db-ni"><span class="i">📊</span>Analytics</div>
+          <div class="db-ni"><span class="i">🏢</span>Properties</div>
+          <div class="db-ni"><span class="i">👥</span>Tenants</div>
+          <div class="db-ni"><span class="i">💷</span>Rent</div>
+          <div class="db-ni"><span class="i">🧾</span>Expenses</div>
+          <div class="db-ni"><span class="i">📄</span>Documents</div>
+          <div class="db-ni"><span class="i">⚡</span>Meters</div>
+        </div>
+        <div class="db-main">
+          <div class="db-top">
+            <h4>Overview</h4>
+            <span class="db-chip">5 properties · March 2026</span>
+          </div>
+          <div class="db-kpis">
+            <div class="db-k"><div class="db-kn g">£8,450</div><div class="db-kl">Collected</div></div>
+            <div class="db-k"><div class="db-kn r">£1,200</div><div class="db-kl">Outstanding</div></div>
+            <div class="db-k"><div class="db-kn g">£3,180</div><div class="db-kl">Net / mo</div></div>
+            <div class="db-k"><div class="db-kn a">88%</div><div class="db-kl">Collection</div></div>
+            <div class="db-k"><div class="db-kn g">100%</div><div class="db-kl">Occupancy</div></div>
+            <div class="db-k"><div class="db-kn a">2</div><div class="db-kl">Certs due</div></div>
+          </div>
+          <div class="db-cards">
+            <div class="db-card">
+              <h5>Income vs expenses <span>this month</span></h5>
+              <div class="db-bars">
+                <div class="db-barcol"><div class="bar" style="height:72px;background:#059669"></div><div class="bl">In</div></div>
+                <div class="db-barcol"><div class="bar" style="height:34px;background:#d97706"></div><div class="bl">Out</div></div>
+                <div class="db-barcol"><div class="bar" style="height:52px;background:#2563eb"></div><div class="bl">Net</div></div>
+              </div>
+            </div>
+            <div class="db-card">
+              <h5>Rent status</h5>
+              <div class="db-rowr"><span class="addr">24 Alma Road</span><span class="db-pill paid">Paid</span></div>
+              <div class="db-rowr"><span class="addr">8 Priory Court</span><span class="db-pill paid">Paid</span></div>
+              <div class="db-rowr"><span class="addr">14 Grove St · 2B</span><span class="db-pill late">6d late</span></div>
+              <div class="db-rowr"><span class="addr">3 Canal View</span><span class="db-pill paid">Paid</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="snap-strip reveal d2">
+      <div class="db-card">
+        <h5>Upcoming certificates <span>next 60 days</span></h5>
+        <div class="db-rowr"><span class="addr">Gas · 24 Alma Road</span><span class="db-pill due">39 days</span></div>
+        <div class="db-rowr"><span class="addr">EPC · 8 Priory Court</span><span class="db-pill due">21 days</span></div>
+        <div class="db-rowr"><span class="addr">EICR · 14 Grove St</span><span class="db-pill paid">Valid</span></div>
+      </div>
+      <div class="db-card">
+        <h5>Portfolio yield <span>by property</span></h5>
+        <div class="db-bars" style="height:76px">
+          <div class="db-barcol"><div class="bar" style="height:60px;background:#2563eb"></div><div class="bl">Alma</div></div>
+          <div class="db-barcol"><div class="bar" style="height:44px;background:#2563eb"></div><div class="bl">Priory</div></div>
+          <div class="db-barcol"><div class="bar" style="height:70px;background:#2563eb"></div><div class="bl">Grove</div></div>
+          <div class="db-barcol"><div class="bar" style="height:38px;background:#2563eb"></div><div class="bl">Canal</div></div>
+        </div>
+      </div>
+      <div class="db-card">
+        <h5>Open jobs <span>3 active</span></h5>
+        <div class="db-rowr"><span class="addr">Boiler · Flat 2B</span><span class="db-pill due">Booked</span></div>
+        <div class="db-rowr"><span class="addr">Damp · 3 Canal View</span><span class="db-pill late">Urgent</span></div>
+        <div class="db-rowr"><span class="addr">Locks · 24 Alma Road</span><span class="db-pill paid">Done</span></div>
       </div>
     </div>
   </div>
@@ -540,7 +689,7 @@ section{position:relative}
     <h2 class="reveal">Start in one message.</h2>
     <p class="lead reveal d1">Message ROHO and it sets you up right there in the chat — no forms, no download, no letting agent.</p>
     <div class="reveal d2">
-      <a class="btn btn-wa" href="https://www.roho.ing" target="_blank" rel="noopener" style="font-size:18px;padding:16px 30px">
+      <a class="btn btn-wa" href="https://www.roho.ing/#signup" target="_blank" rel="noopener" style="font-size:18px;padding:16px 30px">
         <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.1 2.9c.2.2 2 3.1 5 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
         Start on WhatsApp
       </a>
@@ -570,7 +719,7 @@ section{position:relative}
         </div>
         <div class="footer-col">
           <h4>Get started</h4>
-          <a href="https://www.roho.ing" target="_blank" rel="noopener">Start on WhatsApp</a>
+          <a href="https://www.roho.ing/#signup" target="_blank" rel="noopener">Start on WhatsApp</a>
           <a href="#top">Back to top</a>
         </div>
       </div>
